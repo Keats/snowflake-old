@@ -321,7 +321,7 @@ $include-print-styles: false;
 
 // Forms
 
-// $include-html-form-classes: $include-html-classes;
+$include-html-form-classes: true;
 
 // We use this to set the base for lots of form spacing and positioning styles
 // $form-spacing: rem-calc(16);
@@ -438,7 +438,7 @@ $include-print-styles: false;
 
 // Keystrokes
 
-// $include-html-type-classes: $include-html-classes;
+$include-html-type-classes: true;
 
 // We use these to control text styles.
 // $keystroke-font: "Consolas", "Menlo", "Courier", monospace;
