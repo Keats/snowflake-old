@@ -1,0 +1,152 @@
+// This is roughly Foundation typography: https://github.com/zurb/foundation/blob/master/scss/foundation/components/_type.scss
+
+// Resets
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+form,
+p,
+blockquote,
+th,
+td {
+  margin:0;
+  padding:0;
+}
+
+// HR elements
+hr {
+  border: solid #ddd;
+  border-width: 1px 0 0;
+  clear: both;
+  margin: rem-calc(20) 0 (rem-calc(20) - rem-calc(1px));
+  height: 0;
+}
+
+// Links
+a {
+  text-decoration: none;
+  color: #3b8bba;
+
+  &:visited {
+    color: #265778;
+  }
+
+  &:hover, &:focus {
+    color: scale_color(#3b8bba, $lightness: -14%);
+  }
+
+  img {
+    border: none;
+  }
+}
+
+// Headers
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700;
+  font-style: normal;
+  color: #222;
+  text-rendering: optimizeLegibility;
+  margin-top: .5rem;
+  margin-bottom: .5rem;
+  line-height: 1.4;
+}
+
+h1 {
+  font-size: rem-calc(34);
+}
+
+h2 {
+  font-size: rem-calc(27);
+}
+
+h3 {
+  font-size: rem-calc(22);
+}
+
+h4 {
+  font-size: rem-calc(18);
+}
+
+h5 {
+  font-size: rem-calc(17);
+}
+
+h6 {
+  font-size: 1rem;
+}
+
+// Paragraphs
+p {
+  font-family: inherit;
+  font-weight: normal;
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: rem-calc(20);
+  text-rendering: optimizeLegibility;
+}
+
+// Lists
+ul,
+ol,
+dl {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: rem-calc(20);
+  list-style-position:outside;
+  font-family: inherit;
+}
+
+ul {
+  margin-left: 1.1rem;
+}
+
+ul {
+  li {
+    ul,
+    ol {
+      margin-left: rem-calc(20);
+      margin-bottom: 0;
+    }
+  }
+}
+
+ol {
+  margin-left: 1.4rem;
+  li {
+    ul,
+    ol {
+      margin-left: rem-calc(20);
+      margin-bottom: 0;
+    }
+  }
+}
+
+
+// Other elements
+em,
+i {
+  font-style: italic;
+  line-height: inherit;
+}
+
+strong,
+b {
+  font-weight: bold;
+  line-height: inherit;
+}
+
+small {
+  font-size: 60%;
+  line-height: inherit;
+}
