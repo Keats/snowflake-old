@@ -1,0 +1,14 @@
+
+@mixin box(
+  $background-color: white,
+  $color: #222,
+  $border: 2px solid #ddd,
+  $radius: 4px,
+  $padding: 1em
+) {
+  color: $color;
+  background-color: $background-color;
+  border: $border;
+  border-radius: 4px;
+  padding: 1em;
+}

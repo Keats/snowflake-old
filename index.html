@@ -13,150 +13,222 @@
         <ul>
           <li><i class="fa fa-chevron-right"></i>Typography</li>
           <li><i class="fa fa-chevron-right"></i>Buttons</li>
-          <li><i class="fa fa-chevron-right"></i>Form</li>
-          <li><i class="fa fa-chevron-right"></i>Divider</li>
-          <li><i class="fa fa-chevron-right"></i>Image</li>
-          <li><i class="fa fa-chevron-right"></i>Notification</li>
-          <li><i class="fa fa-chevron-right"></i>Message</li>
+          <li><i class="fa fa-chevron-right"></i>Forms</li>
+          <li><i class="fa fa-chevron-right"></i>Messages</li>
           <li><i class="fa fa-chevron-right"></i>Tooltips</li>
           <li><i class="fa fa-chevron-right"></i>Lists</li>
+          <li><i class="fa fa-chevron-right"></i>Goodies</li>
         </ul>
       </nav>
     </aside>
 
     <article>
+      <h1>Typography</h1>
+      <hr/>
 
+      <h2>Headings</h2>
+      <div class="example">
+        <h1>h1 header</h1>
+        <hr/>
+        <h2>h2 header</h2>
+        <hr/>
+        <h3>h3 header</h3>
+        <hr/>
+        <h4>h4 header</h4>
+        <hr/>
+        <h5>h5 header</h5>
+        <hr/>
+        <h6>h6 header</h6>
+      </div>
+
+      <h2>Lists</h2>
+      <div class="example">
+        <ul>
+          <li>List item with a much longer description or more content.</li>
+          <li>List item</li>
+          <li>List item
+            <ul>
+              <li>Nested List Item</li>
+              <li>Nested List Item</li>
+              <li>Nested List Item</li>
+            </ul>
+          </li>
+          <li>List item</li>
+          <li>List item</li>
+          <li>List item</li>
+        </ul>
+
+        <hr/>
+
+        <ul class="inline-list">
+          <li>An</li>
+          <li>Inline</li>
+          <li>List</li>
+          <li>End</li>
+        </ul>
+      </div>
+
+      <h2>Others elements</h2>
+      <div class="example">
+        <small>A small text.</small>
+        <hr/>
+        <strong>A bold text.</strong>
+        <hr/>
+        <em>An italic text</em>
+      </div>
+
+      <h1>Buttons</h1>
+      <hr/>
+
+      <div class="example">
+        <a class="button" href="#">A button</a>
+        <a class="button button--disabled" href="#">Disabled</a>
+        <input class="button" type="button" value="An input button"/>
+        <a class="button" href="#"><i class="fa fa-times"></i>A button with an icon</a>
+      </div>
+
+      <h1>Forms</h1>
+      <hr/>
+
+      <h2>Stacked form</h2>
+      <div class="example">
+        <form class="form--stacked">
+          <fieldset>
+            <legend>A stacked Form</legend>
+
+            <label for="email">Email</label>
+            <input id="email" type="email" placeholder="Email">
+
+            <label for="password">Password</label>
+            <input id="password" type="password" placeholder="Password">
+
+            <label for="state">State</label>
+            <select id="state">
+              <option>AL</option>
+              <option>CA</option>
+              <option>IL</option>
+            </select>
+
+            <label for="remember">
+              <input id="remember" type="checkbox"> Remember me
+            </label>
+
+            <button type="submit" class="button">Sign in
+            </button>
+          </fieldset>
+        </form>
+      </div>
+
+      <h2>Aligned form</h2>
+      <div class="example">
+        <form class="form--aligned">
+          <fieldset>
+            <legend>An aligned Form</legend>
+
+            <div class="aligned-input">
+              <label for="email2">Email</label>
+              <input id="email2" type="email" placeholder="Email">
+            </div>
+
+            <div class="aligned-input">
+              <label for="password2">Password</label>
+              <input id="password2" type="password" placeholder="Password">
+            </div>
+
+            <div class="aligned-input">
+              <label for="state2">State</label>
+              <select id="state2">
+                <option>AL</option>
+                <option>CA</option>
+                <option>IL</option>
+              </select>
+            </div>
+
+            <div class="aligned-input shift-20">
+              <label for="remember2">
+                <input id="remember2" type="checkbox"> Remember me
+              </label>
+            </div>
+
+            <button type="submit" class="button shift-20">Sign in
+            </button>
+          </fieldset>
+        </form>
+      </div>
+
+      <h2>More inputs</h2>
+      <div class="example">
+        <div class="input-icon">
+          <input type="text" placeholder="Icon on the right">
+          <i class="fa fa-search"></i>
+        </div>
+
+        <br/>
+
+        <div class="input-icon-left">
+          <input type="text" placeholder="Icon on the left">
+          <i class="fa fa-search"></i>
+        </div>
+
+        <br/>
+
+        <div class="input-postfix">
+          <input type="text" placeholder="Postfix button"><div><a class="button" href="#">A button</a></div>
+        </div>
+      </div>
+
+      <h1>Messages</h1>
+      <div class="example">
+        <div class="message">
+          <strong>A title!</strong>
+          Hello world.
+        </div>
+
+        <div class="message">
+          <strong>A message with an icon!</strong>
+          Automatically set up at the correct position.
+          <span><i class="fa fa-times"></i></span>
+        </div>
+      </div>
+
+      <h1>Tooltips</h1>
+      <div class="example">
+        <div class="tooltip">
+          Bottom tooltip
+        </div>
+
+        <div class="tooltip--top">
+          Top tooltip
+        </div>
+
+        <div class="tooltip--left">
+          Left tooltip
+        </div>
+
+        <div class="tooltip--right">
+          Right tooltip
+        </div>
+      </div>
+
+      <h1>Goodies</h1>
+
+      <div class="example">
+        <h3>Dividers</h3>
+        <div class="divider">Hello</div>
+        <hr/>
+
+        <h3>Images</h3>
+        <img src="http://placehold.it/150x150" alt="" class="avatar"/>
+        <img src="http://placehold.it/150x150" alt="" class="rounded-image"/>
+        <hr/>
+
+        <h3>Notifications</h3>
+        <span class="notification">42</span>
+      </div>
     </article>
 
-    <h1>Typography</h1>
+    <!--<h2>Inline list</h2>-->
 
-    <h2>Typography</h2>
-
-    <h3>Typography</h3>
-    <h4>Typography</h4>
-    <h5>Typography</h5>
-    <h6>Typography</h6>
-
-    <p>This is a paragraph containing a <a href="#">link</a></p>
-
-    <ul class="disc">
-      <li>List item with a much longer description or more content.</li>
-      <li>List item</li>
-      <li>List item
-        <ul>
-          <li>Nested List Item</li>
-          <li>Nested List Item</li>
-          <li>Nested List Item</li>
-        </ul>
-      </li>
-      <li>List item</li>
-      <li>List item</li>
-      <li>List item</li>
-    </ul>
-
-    <hr/>
-
-    <h2>Buttons</h2>
-    <a class="button" href="#">A button</a>
-    <a class="button button--disabled" href="#">Disabled</a>
-    <input class="button" type="button" value="An input button"/>
-    <a class="button" href="#"><i class="fa fa-times"></i>A button with an icon</a>
-
-    <hr/>
-
-    <h2>Forms</h2>
-
-    <form class="form--stacked">
-      <fieldset>
-        <legend>A stacked Form</legend>
-
-        <label for="email2">Email</label>
-        <input id="email2" type="email" placeholder="Email">
-
-        <label for="password2">Password</label>
-        <input id="password2" type="password" placeholder="Password">
-
-        <label for="state2">State</label>
-        <select id="state2">
-          <option>AL</option>
-          <option>CA</option>
-          <option>IL</option>
-        </select>
-
-        <label for="remember2">
-          <input id="remember2" type="checkbox"> Remember me
-        </label>
-
-        <button type="submit" class="button">Sign in
-        </button>
-      </fieldset>
-    </form>
-
-    <h3>Inputs with icons</h3>
-
-    <div class="input-icon">
-      <input type="text" placeholder="Search...">
-      <i class="fa fa-search"></i>
-    </div>
-
-    <div class="input-icon-left">
-      <input type="text" placeholder="Search...">
-      <i class="fa fa-search"></i>
-    </div>
-
-    <h3>Inputs with actions</h3>
-
-    <div class="input-postfix">
-      <input type="text" placeholder="Search..."><div><a class="button" href="#">A button</a></div>
-    </div>
-
-
-    <h2>Divider</h2>
-    <div class="divider">Hello</div>
-
-    <h2>Images</h2>
-    <img src="http://placehold.it/200x200" alt="" class="avatar"/>
-    <img src="http://placehold.it/200x200" alt="" class="rounded-image"/>
-
-    <h2>Notifications</h2>
-    <span class="notification">42</span>
-
-    <h2>Messages</h2>
-    <div class="message">
-      <strong>Alert!</strong>
-      Hello world.
-    </div>
-
-    <div class="message">
-      <strong>With a X!</strong>
-      Automatically set up at the correct position
-      <span><i class="fa fa-times"></i></span>
-    </div>
-
-    <h2>Tooltip</h2>
-    <div class="tooltip">
-      Top tooltip
-    </div>
-
-    <div class="tooltip--top">
-      Top tooltip
-    </div>
-
-    <div class="tooltip--left">
-      Top tooltip
-    </div>
-
-    <div class="tooltip--right">
-      Top tooltip
-    </div>
-
-    <h2>Inline list</h2>
-    <ul class="inline-list">
-      <li>Home</li>
-      <li>No idea</li>
-      <li>Still no inspiration</li>
-      <li>End</li>
-    </ul>
 
   </body>
 </html>

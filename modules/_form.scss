@@ -27,6 +27,7 @@
     }
 
     margin: 0;
+    margin-bottom: 0.5em;
     padding: .65em 1em;
     border-radius: 4px;
     box-sizing: border-box;
@@ -129,5 +130,13 @@
       border-bottom-left-radius: 0 !important;
     }
   }
+}
 
+@mixin aligned-label-input($label-padding-right: 30px) {
+  label {
+    display: inline-block;
+    vertical-align: middle;
+    padding-right: $label-padding-right;
+    text-align: right;
+  }
 }

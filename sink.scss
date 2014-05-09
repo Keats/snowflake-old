@@ -1,10 +1,16 @@
-html, body {height: 100%}
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+}
 
 body {
   height: 100%;
   min-height: 100%;
 
-  background-color: #ecf2f6;
   @include form(true);
   @include typography();
 
@@ -14,9 +20,9 @@ body {
 }
 
 aside {
-  width: 250px;
+  width: 20%;
   height: 100%;
-  display: inline-block;
+  position: fixed;
   background-color: #1f282d;
   color: white;
 
@@ -33,71 +39,96 @@ aside {
   }
 }
 
+article {
+  width: 80%;
+  position: absolute;
+  right: 0;
+  padding: 0 2em;
+  padding-bottom: 2em;
 
-.button {
-  @include button(#008CBA, white);
-}
+  .example {
+    @include box(#ecf2f6);
+  }
 
-.button--disabled {
-  @include button-disabled();
-}
+  .button {
+    @include button(#008CBA, white);
+  }
 
-.form--stacked {
-  @include stacked-form();
-}
+  .button--disabled {
+    @include button-disabled;
+  }
 
-.divider {
-  @include divider();
-}
+  .form--stacked {
+    @include stacked-form;
+  }
 
-.input-icon {
-  @include input-with-icon();
-}
+  .aligned-input {
+    @include aligned-label-input;
 
-.input-icon-left {
-  @include input-with-icon(left);
-}
+    label {
+      width: 20%;
+    }
+  }
 
-.input-postfix {
-  @include input-postfix();
-}
+  // would use a column offset with a grid offset
+  .shift-20 {
+    position: relative;
+    left: 20%;
+  }
 
-.avatar {
-  @include circular-image();
-}
+  .input-icon {
+    @include input-with-icon;
+  }
 
-.rounded-image {
-  @include rounded-image();
-}
+  .input-icon-left {
+    @include input-with-icon(left);
+  }
 
-.notification {
-  @include notification();
-}
+  .input-postfix {
+    @include input-postfix;
+  }
 
-.message {
-  @include message();
-}
+  .divider {
+    @include divider;
+  }
 
-.tooltip {
-  @include tooltip();
-  margin-right: 1em;
-}
+  .avatar {
+    @include circular-image();
+  }
 
-.tooltip--top {
-  @include tooltip(top);
-  margin-right: 1em;
-}
+  .rounded-image {
+    @include rounded-image();
+  }
 
-.tooltip--right {
-  @include tooltip(right);
-  margin-right: 1em;
-}
+  .notification {
+    @include notification();
+  }
 
-.tooltip--left {
-  @include tooltip(left);
-  margin-right: 1em;
-}
+  .message {
+    @include message();
+  }
 
-.inline-list {
-  @include inline-list;
+  .tooltip {
+    @include tooltip;
+    margin-right: 1em;
+  }
+
+  .tooltip--top {
+    @include tooltip(top);
+    margin-right: 1em;
+  }
+
+  .tooltip--right {
+    @include tooltip(right);
+    margin-right: 1em;
+  }
+
+  .tooltip--left {
+    @include tooltip(left);
+    margin-right: 1em;
+  }
+
+  .inline-list {
+    @include inline-list;
+  }
 }
