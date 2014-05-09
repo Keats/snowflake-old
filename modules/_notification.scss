@@ -1,0 +1,21 @@
+
+@mixin notification(
+  $background-color: red,
+  $color: white,
+  $radius: .5em,
+  $font-size: .8em,
+  $padding-width: .6em,
+  $padding-height: .4em
+) {
+  box-sizing: border-box;
+  display: inline-block;
+  text-align: center;
+  line-height: 1;
+
+  border-radius: $radius;
+  padding: $padding-height $padding-width;
+  font-size: $font-size;
+
+  background-color: $background-color;
+  color: $color;
+}

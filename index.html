@@ -3,6 +3,7 @@
 <head>
   <title>Kitchen Sink</title>
   <link rel="stylesheet" href="snowflake.css"/>
+  <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
 </head>
 <body>
   <h1>Typography</h1>
@@ -40,31 +41,7 @@
 
   <hr/>
 
-  <form>
-    <fieldset>
-      <legend>An inline Form</legend>
-
-      <label for="email">Email</label>
-      <input id="email" type="email" placeholder="Email">
-
-      <label for="password">Password</label>
-      <input id="password" type="password" placeholder="Password">
-
-      <label for="state">State</label>
-      <select id="state">
-        <option>AL</option>
-        <option>CA</option>
-        <option>IL</option>
-      </select>
-
-      <label for="remember">
-        <input id="remember" type="checkbox"> Remember me
-      </label>
-
-      <button type="submit" class="button">Sign in
-      </button>
-    </fieldset>
-  </form>
+  <h2>Forms</h2>
 
   <form class="form--stacked">
     <fieldset>
@@ -92,6 +69,46 @@
     </fieldset>
   </form>
 
+  <h3>Inputs with icons</h3>
+
+  <div class="input-icon">
+    <input type="text" placeholder="Search...">
+    <i class="fa fa-search"></i>
+  </div>
+
+  <div class="input-icon-left">
+    <input type="text" placeholder="Search...">
+    <i class="fa fa-search"></i>
+  </div>
+
+  <h3>Inputs with actions</h3>
+
+  <div class="input-postfix">
+    <input type="text" placeholder="Search..."><div><a class="button" href="#">A button</a></div>
+  </div>
+
+
+  <h2>Divider</h2>
   <div class="divider">Hello</div>
+
+  <h2>Images</h2>
+  <img src="http://placehold.it/200x200" alt="" class="avatar"/>
+  <img src="http://placehold.it/200x200" alt="" class="rounded-image"/>
+
+  <h2>Notifications</h2>
+  <span class="notification">42</span>
+
+  <h2>Messages</h2>
+  <div class="message">
+    <strong>Alert!</strong>
+    Hello world.
+  </div>
+
+  <div class="message">
+    <strong>With a X!</strong>
+    Automatically set up at the correct position
+    <span><i class="fa fa-times"></i></span>
+  </div>
+
 </body>
 </html>

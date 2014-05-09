@@ -17,6 +17,7 @@
   select,
   textarea {
     color: rgba(0, 0, 0, .7);
+    min-height: 43px;
 
     @if $borderless-input {
       box-shadow: 0 2px 1px 0 #ccc;
@@ -77,4 +78,56 @@
   input[type="checkbox"], input[type="radio"] {
     display: inline-block;
   }
+}
+
+@mixin input-with-icon($position: right) {
+  position: relative;
+  display: inline-block;
+
+  input {
+    padding-#{$position}: 3em !important;
+
+    &:focus {
+      +i {
+        opacity: 1;
+      }
+    }
+  }
+
+  i {
+    box-sizing: border-box;
+    cursor: default;
+    position: absolute;
+    top: 0.8em;
+
+    @if $position == right {
+      right: 0;
+    } @else {
+      left: 0.6em;
+    }
+
+    margin: 0;
+    opacity: 0.5;
+    width: 1.5em;
+  }
+}
+
+@mixin input-postfix() {
+  input {
+    display: inline-block;
+    border-top-right-radius: 0 !important;
+    border-bottom-right-radius: 0 !important;
+  }
+
+  div {
+    display: inline-block;
+    border-top-left-radius: 0 !important;
+    border-bottom-left-radius: 0 !important;
+
+    * {
+      border-top-left-radius: 0 !important;
+      border-bottom-left-radius: 0 !important;
+    }
+  }
+
 }

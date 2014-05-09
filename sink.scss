@@ -3,6 +3,10 @@ body {
   background-color: #ecf2f6;
   @include form(true);
   @include typography();
+
+  img {
+    @include responsive-image();
+  }
 }
 
 .button {
@@ -19,4 +23,32 @@ body {
 
 .divider {
   @include divider();
+}
+
+.input-icon {
+  @include input-with-icon();
+}
+
+.input-icon-left {
+  @include input-with-icon(left);
+}
+
+.input-postfix {
+  @include input-postfix();
+}
+
+.avatar {
+  @include circular-image();
+}
+
+.rounded-image {
+  @include rounded-image();
+}
+
+.notification {
+  @include notification();
+}
+
+.message {
+  @include message();
 }

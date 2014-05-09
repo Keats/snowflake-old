@@ -1,0 +1,14 @@
+@mixin responsive-image() {
+    max-width: 100%;
+    height: auto;
+}
+
+@mixin circular-image() {
+  border-radius: 500rem;
+}
+
+@mixin rounded-image(
+  $radius: 0.3em
+) {
+  border-radius: $radius;
+}

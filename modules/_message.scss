@@ -1,0 +1,22 @@
+
+@mixin message(
+  $background-color: #dff0d8,
+  $border-radius: 4px
+) {
+  padding: 1em;
+  margin-bottom: 1em;
+  border-radius: $border-radius;
+  position: relative;
+
+  background-color: $background-color;
+  border-width: 1px;
+  border-style: solid;
+  border-color: scale_color($background-color, $lightness: -8%);
+  color: scale_color($background-color, $lightness: -60%);
+
+  span {
+    position: absolute;
+    top: 0.5em;
+    right: 0.5em;
+  }
+}
