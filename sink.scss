@@ -1,6 +1,7 @@
 body {
   padding: 2em;
   background-color: #ecf2f6;
+  @include form(true);
 }
 
 .button {
