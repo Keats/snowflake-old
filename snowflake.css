@@ -544,3 +544,24 @@ body {
   margin: .35em 0; }
 .form--stacked input[type="checkbox"], .form--stacked input[type="radio"] {
   display: inline-block; }
+
+.divider {
+  box-sizing: border-box;
+  user-select: none;
+  text-align: center;
+  display: block;
+  overflow: hidden; }
+  .divider:after, .divider:before {
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+    width: 50%;
+    border-top-style: solid;
+    border-top-width: 1px; }
+  .divider:before {
+    right: 0.5em;
+    margin-left: -50%; }
+  .divider:after {
+    left: 0.5em;
+    margin-right: -50%; }

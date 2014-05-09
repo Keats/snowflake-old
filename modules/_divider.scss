@@ -1,0 +1,44 @@
+
+@mixin divider(
+  $height: 1px,
+  $space: 0.5em,
+  $color: inherit,
+  $style: solid,
+  $vertical-adjust: false
+) {
+  box-sizing: border-box;
+  user-select: none;
+  text-align: center;
+  display: block;
+  overflow: hidden;
+
+  &:after, &:before {
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+    width: 50%;
+
+    border-top-style: $style;
+    border-top-width: $height;
+
+    @if $color != inherit {
+      border-top-color: $color;
+    }
+
+    @if $vertical-adjust != false {
+      bottom: $vertical-adjust;
+    }
+  }
+
+   &:before {
+    right: $space;
+    margin-left: -50%;
+  }
+
+  &:after {
+    left: $space;
+    margin-right: -50%;
+  }
+
+}

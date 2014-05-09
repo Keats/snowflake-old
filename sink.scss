@@ -16,3 +16,7 @@ body {
 .form--stacked {
   @include stacked-form();
 }
+
+.divider {
+  @include divider();
+}
