@@ -781,3 +781,15 @@ body {
     border-width: 11px;
     border-right-color: #313b4b;
     margin-top: -11px; }
+
+.inline-list {
+  list-style: none;
+  margin: 0;
+  overflow: hidden; }
+  .inline-list li {
+    list-style: none;
+    display: inline-block;
+    margin-right: 20px;
+    text-transform: uppercase; }
+    .inline-list li:last-of-type {
+      margin-right: 0; }

@@ -72,3 +72,8 @@ body {
   @include tooltip(left);
   margin-right: 1em;
 }
+
+
+.inline-list {
+  @include inline-list;
+}

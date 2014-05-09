@@ -1,0 +1,23 @@
+
+@mixin inline-list(
+  $spacing: 20px,
+  $uppercase: true
+) {
+  list-style: none;
+  margin: 0;
+  overflow: hidden;
+
+  li {
+    list-style: none;
+    display: inline-block;
+    margin-right: $spacing;
+
+    &:last-of-type {
+      margin-right: 0;
+    }
+
+    @if $uppercase {
+      text-transform: uppercase;
+    }
+  }
+}
