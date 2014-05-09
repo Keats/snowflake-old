@@ -2,6 +2,7 @@
 @import "normalize";
 
 @import "helpers/functions";
+@import "helpers/arrows";
 
 @import "modules/type";
 @import "modules/button";
@@ -10,5 +11,6 @@
 @import "modules/image";
 @import "modules/notification";
 @import "modules/message";
+@import "modules/tooltip";
 
 @import "sink";

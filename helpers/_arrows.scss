@@ -1,0 +1,73 @@
+@mixin arrow(
+  $position: bottom,
+  $background-color: white,
+  $border-color: black,
+  $size: 10px,
+  $border-width: 1px
+) {
+
+  $reverse-size: strip-unit($size) + strip-unit($border-width);
+
+  &:after, &:before {
+
+    @if $position == bottom {
+      top: 100%;
+      left: 50%;
+    } @else if $position == top {
+      bottom: 100%;
+      left: 50%;
+    } @else if $position == right {
+      left: 100%;
+      top: 50%;
+    } @else if $position == left {
+      right: 100%;
+      top: 50%;
+    }
+
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+  }
+
+  &:after {
+    border-color: rgba(136, 183, 213, 0);
+    border-width: $size;
+
+    @if $position == bottom {
+      border-top-color: $background-color;
+      margin-left: -$size;
+    } @else if $position == top {
+      border-bottom-color: $background-color;
+      margin-left: -$size;
+    } @else if $position == right {
+      border-left-color: $background-color;
+      margin-top: -$size;
+    } @else if $position == left {
+      border-right-color: $background-color;
+      margin-top: -$size;
+    }
+  }
+
+  &:before {
+    border-color: rgba(194, 225, 245, 0);
+    border-width: #{$reverse-size}px;
+
+    @if $position == bottom {
+      border-top-color: $border-color;
+      margin-left: -#{$reverse-size}px;
+    } @else if $position == top {
+      border-bottom-color: $border-color;
+      margin-left: -#{$reverse-size}px;
+    } @else if $position == right {
+      border-left-color: $border-color;
+      margin-top: -#{$reverse-size}px;
+    } @else if $position == left {
+      border-right-color: $border-color;
+      margin-top: -#{$reverse-size}px;
+    }
+  }
+
+}

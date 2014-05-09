@@ -52,3 +52,23 @@ body {
 .message {
   @include message();
 }
+
+.tooltip {
+  @include tooltip();
+  margin-right: 1em;
+}
+
+.tooltip--top {
+  @include tooltip(top);
+  margin-right: 1em;
+}
+
+.tooltip--right {
+  @include tooltip(right);
+  margin-right: 1em;
+}
+
+.tooltip--left {
+  @include tooltip(left);
+  margin-right: 1em;
+}
